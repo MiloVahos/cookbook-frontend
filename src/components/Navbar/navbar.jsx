@@ -8,38 +8,10 @@ export default function NavBar() {
     fontSize: '30px',
   };
 
-  /*const [ loginSuccesful, setLoginSuccesful ] = useState(false);
-  const [ usuario, setUsuario ] = useState(null);
-
-
-  const login = async () => {
-
-
-
-    await firebaseApp.auth().signInWithPopup(googleAuthProvider).then(result => {
-      setUsuario(result);
-      setLoginSuccesful(true);
-    })
-    .catch(error => {
-      console.log(error.message)
-    });
-  };
-
-  const logOut = async () => {
-    await firebaseApp.auth().signOut();
-    setLoginSuccesful(false);
-  }*/
-
   const isLoggedIn = () => {
     if(true) {
-      return <Button variant="outline-danger" /*onClick={loginWithGoogle}*/>Login</Button> 
+      return <Button variant="outline-danger">Login</Button> 
     }
-    /*return (
-      <>
-        <Navbar.Brand>Hola{ usuario.user.displayName }</Navbar.Brand>
-        <Button variant="outline-danger" onClick={logOut}>Salir</Button>
-      </>
-    )*/
   };
 
   return (
